@@ -8,10 +8,10 @@ const state = {
 // }
 
 // impure(2);
-// console.log(state.value);
+// console.log(state.value); // 10
 
 // impure(2);
-// console.log(state.value);
+// console.log(state.value); // 20
 
 // Pure function
 
@@ -21,8 +21,8 @@ const pureFn = (multiplier) => {
     
 }
 pureFn(2);
-console.log(state.value);
+console.log(state.value); // 5
 pureFn(2);
-console.log(state.value);
+console.log(state.value); // 5
 pureFn(2);
-console.log(state.value);
+console.log(state.value); // 5
